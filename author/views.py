@@ -101,6 +101,6 @@ def pass_change(request):
         form = PasswordChangeForm(user=request.user)
         return render(request, 'pass_change.html',{'form': form})
             
-def user_logout(request):
-    logout(request)
-    return redirect('user_login')            
+# def user_logout(request):
+#     logout(request)
+#     return redirect('user_login')            
